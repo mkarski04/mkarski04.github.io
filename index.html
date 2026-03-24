@@ -6,16 +6,25 @@
     <title>Mieszko Karski - Portfolio</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="lang-pl">
+    
+    <div class="language-switch">
+        <button id="btn-pl" class="active" onclick="setLanguage('pl')">PL</button>
+        <span>|</span>
+        <button id="btn-en" onclick="setLanguage('en')">EN</button>
+    </div>
+
     <div class="layout-wrapper">
         <aside class="sidebar">
             <header class="profile-header">
                 <h1>Mieszko Karski</h1>
-                <h2>Student III roku inżynierii mechatronicznej</h2>
+                <h2 class="pl">Student III roku inżynierii mechatronicznej</h2>
+                <h2 class="en">3rd-Year Mechatronics Engineering Student</h2>
             </header>
 
             <div class="sidebar-section">
-                <h3>Kontakt</h3>
+                <h3 class="pl">Kontakt</h3>
+                <h3 class="en">Contact</h3>
                 <ul class="contact-info">
                     <li>📍 Kraków, Rzeszów</li>
                     <li>📞 531 199 971</li>
@@ -25,90 +34,262 @@
             </div>
 
             <div class="sidebar-section">
-                <h3>Umiejętności</h3>
+                <h3 class="pl">Umiejętności</h3>
+                <h3 class="en">Skills</h3>
                 <ul>
-                    <li><strong>Projektowanie 3D / CAD:</strong> Siemens NX, Autodesk Inventor</li>
-                    <li><strong>Obliczenia i Analiza:</strong> MATLAB</li>
-                    <li><strong>Programowanie:</strong> C++, HTML, CSS, Bash</li>
-                    <li><strong>Kompetencje miękkie:</strong> Zarządzanie projektami inżynierskimi</li>
+                    <li>
+                        <strong class="pl">Projektowanie 3D / CAD:</strong>
+                        <strong class="en">3D Design / CAD:</strong> 
+                        Siemens NX, Autodesk Inventor
+                    </li>
+                    <li>
+                        <strong class="pl">Obliczenia i Analiza:</strong>
+                        <strong class="en">Calculation & Analysis:</strong> 
+                        MATLAB
+                    </li>
+                    <li>
+                        <strong class="pl">Programowanie:</strong>
+                        <strong class="en">Programming:</strong> 
+                        C++, HTML, CSS, Bash
+                    </li>
+                    <li>
+                        <strong class="pl">Narzędzia biurowe:</strong>
+                        <strong class="en">Office Tools:</strong> 
+                        MS Office
+                    </li>
+                    <li>
+                        <strong class="pl">Kompetencje miękkie:</strong>
+                        <strong class="en">Soft Skills:</strong> 
+                        <span class="pl">Zarządzanie projektami inżynierskimi</span>
+                        <span class="en">Engineering Project Management</span>
+                    </li>
                 </ul>
             </div>
 
             <div class="sidebar-section">
-                <h3>Języki</h3>
+                <h3 class="pl">Języki</h3>
+                <h3 class="en">Languages</h3>
                 <ul>
-                    <li>Angielski – C2 (certyfikat CPE)</li>
-                    <li>Niemiecki – B1 (w trakcie kursu B2)</li>
+                    <li>
+                        <span class="pl">Angielski – C2 (certyfikat CPE)</span>
+                        <span class="en">English – C2 (CPE Certificate)</span>
+                    </li>
+                    <li>
+                        <span class="pl">Niemiecki – B1 (w trakcie kursu B2)</span>
+                        <span class="en">German – B1 (Currently studying for B2)</span>
+                    </li>
                 </ul>
             </div>
         </aside>
 
         <main class="content">
             <section>
-                <h3 class="section-title">Doświadczenie</h3>
+                <h3 class="section-title pl">Doświadczenie</h3>
+                <h3 class="section-title en">Experience</h3>
                 
                 <div class="card">
                     <div class="flex-header">
-                        <strong>Korepetytor — Matematyka</strong>
-                        <span class="date-badge">Wrzesień 2023 - OBECNIE</span>
+                        <strong>
+                            <span class="pl">Korepetytor — Matematyka</span>
+                            <span class="en">Tutor — Mathematics</span>
+                        </strong>
+                        <span class="date-badge">
+                            <span class="pl">Wrzesień 2023 - OBECNIE</span>
+                            <span class="en">September 2023 - PRESENT</span>
+                        </span>
                     </div>
-                    <ul>
+                    <ul class="pl">
                         <li>Kompleksowe przygotowanie uczniów do matury oraz egzaminu ósmoklasisty</li>
                         <li>Prowadzenie zajęć w formatach online oraz stacjonarnych</li>
                         <li>Tworzenie indywidualnych planów nauczania dostosowanych do potrzeb ucznia</li>
                     </ul>
+                    <ul class="en">
+                        <li>Comprehensive preparation of students for the maturity and eighth-grade exams</li>
+                        <li>Conducting classes in both online and in-person formats</li>
+                        <li>Creating tailored lesson plans adapted to individual student needs</li>
+                    </ul>
                 </div>
 
                 <div class="card">
                     <div class="flex-header">
-                        <strong>Intelimedical Poland, Warszawa, Kraków — Praktykant</strong>
-                        <span class="date-badge">Wrzesień 2025 - Październik 2025</span>
+                        <strong>
+                            <span class="pl">Intelimedical Poland, Warszawa, Kraków — Praktykant</span>
+                            <span class="en">Intelimedical Poland, Warsaw, Krakow — Intern</span>
+                        </strong>
+                        <span class="date-badge">
+                            <span class="pl">Wrzesień 2025 - Październik 2025</span>
+                            <span class="en">September 2025 - October 2025</span>
+                        </span>
                     </div>
-                    <ul>
+                    <ul class="pl">
                         <li>Diagnozowanie usterek oraz wykonywanie czynności konserwacyjnych sprzętu medycznego</li>
                         <li>Zarządzanie dokumentacją serwisową oraz ewidencją działań technicznych</li>
                         <li>Współpraca z zespołem technicznym przy realizacji kluczowych zadań serwisowych</li>
                     </ul>
+                    <ul class="en">
+                        <li>Diagnosing faults and performing maintenance on medical equipment</li>
+                        <li>Managing service documentation and technical action records</li>
+                        <li>Collaborating with the technical team to execute key service tasks</li>
+                    </ul>
                 </div>
 
                 <div class="card">
                     <div class="flex-header">
-                        <strong>Rickim Elektronik, Düren, Niemcy — Asystent</strong>
-                        <span class="date-badge">Czerwiec 2023 - Sierpień 2023</span>
+                        <strong>
+                            <span class="pl">Rickim Elektronik, Düren, Niemcy — Asystent</span>
+                            <span class="en">Rickim Elektronik, Düren, Germany — Assistant</span>
+                        </strong>
+                        <span class="date-badge">
+                            <span class="pl">Czerwiec 2023 - Sierpień 2023</span>
+                            <span class="en">June 2023 - August 2023</span>
+                        </span>
                     </div>
-                    <ul>
+                    <ul class="pl">
                         <li>Współzarządzanie procesami operacyjnymi firmy</li>
                         <li>Organizacja i optymalizacja pracy biura</li>
                         <li>Obsługa międzynarodowych klientów w języku angielskim i niemieckim</li>
                     </ul>
+                    <ul class="en">
+                        <li>Co-managing the company's operational processes</li>
+                        <li>Organising and optimising office workflow</li>
+                        <li>Providing customer service to international clients in English and German</li>
+                    </ul>
                 </div>
             </section>
 
             <section>
-                <h3 class="section-title">Edukacja</h3>
+                <h3 class="section-title pl">Edukacja</h3>
+                <h3 class="section-title en">Education</h3>
                 <div class="card">
                     <div class="flex-header">
-                        <strong>Akademia Górniczo-Hutnicza, Kraków</strong>
-                        <span class="date-badge">Październik 2023 - OBECNIE</span>
+                        <strong>
+                            <span class="pl">Akademia Górniczo-Hutnicza, Kraków</span>
+                            <span class="en">AGH University of Science and Technology, Krakow</span>
+                        </strong>
+                        <span class="date-badge">
+                            <span class="pl">Październik 2023 - OBECNIE</span>
+                            <span class="en">October 2023 - PRESENT</span>
+                        </span>
                     </div>
-                    <ul>
+                    <ul class="pl">
                         <li>Laureat Olimpiady o Diamentowy Indeks AGH</li>
                         <li>Student III roku studiów inżynierskich</li>
                         <li>Nauka w języku angielskim</li>
                     </ul>
+                    <ul class="en">
+                        <li>Laureate of the AGH Diamond Index Olympiad</li>
+                        <li>3rd-year engineering student</li>
+                        <li>Studies conducted in English</li>
+                    </ul>
                 </div>
             </section>
 
             <section>
-                <h3 class="section-title">Projekty</h3>
+                <h3 class="section-title pl">Projekty</h3>
+                <h3 class="section-title en">Projects</h3>
+                
                 <div class="card">
-                    <ul>
-                        <li><strong>Własny projekt 1:</strong><br>Krótki opis technologii i osiągnięć w ramach tego projektu inżynierskiego.</li>
-                        <li><strong>Własny projekt 2:</strong><br>Krótki opis technologii i osiągnięć w ramach tego projektu inżynierskiego.</li>
+                    <div class="flex-header">
+                        <strong>
+                            <span class="pl">Projekt inżynierski 5-osiowego ramienia robotycznego</span>
+                            <span class="en">5-DOF Robotic Arm Engineering Design</span>
+                        </strong>
+                        <span class="date-badge">
+                            <span class="pl">Projekt Akademicki</span>
+                            <span class="en">University Project</span>
+                        </span>
+                    </div>
+                    <ul class="pl">
+                        <li>Zaprojektowanie trójwymiarowego modelu przestrzennego ramienia robota z wykorzystaniem Siemens NX</li>
+                        <li>Rozwiązanie problemów z zakresu kinematyki i planowania trajektorii ruchu dla mechanizmu o 5 stopniach swobody</li>
+                    </ul>
+                    <ul class="en">
+                        <li>Designed a comprehensive 3D spatial model of a robotic arm utilising Siemens NX</li>
+                        <li>Solved kinematics and motion trajectory planning problems for a 5-degree-of-freedom mechanism</li>
                     </ul>
                 </div>
+
+                <div class="card">
+                    <div class="flex-header">
+                        <strong>
+                            <span class="pl">Projekt i analiza wału maszynowego</span>
+                            <span class="en">Stepped Shaft Design and Analysis</span>
+                        </strong>
+                        <span class="date-badge">
+                            <span class="pl">Projekt Akademicki</span>
+                            <span class="en">University Project</span>
+                        </span>
+                    </div>
+                    <ul class="pl">
+                        <li>Zaprojektowanie i analiza modelu z wykorzystaniem oprogramowania Autodesk Inventor</li>
+                        <li>Przeprowadzenie zaawansowanych obliczeń wytrzymałościowych, dobór optymalnych łożysk oraz ścisłe zdefiniowanie tolerancji produkcyjnych</li>
+                    </ul>
+                    <ul class="en">
+                        <li>Designed and analysed the 3D model utilising Autodesk Inventor software</li>
+                        <li>Performed advanced strength calculations, selected optimal bearings, and strictly defined manufacturing tolerances</li>
+                    </ul>
+                </div>
+
+                <div class="card">
+                    <div class="flex-header">
+                        <strong>
+                            <span class="pl">Analiza układu mechatronicznego</span>
+                            <span class="en">Mechatronic System Analysis</span>
+                        </strong>
+                        <span class="date-badge">
+                            <span class="pl">Projekt Akademicki</span>
+                            <span class="en">University Project</span>
+                        </span>
+                    </div>
+                    <ul class="pl">
+                        <li>Przeprowadzenie kompleksowej analizy kinematycznej i dynamicznej mechanizmu płaskiego o jednym stopniu swobody</li>
+                        <li>Zastosowanie metod analitycznych oraz grafoanalitycznych do precyzyjnego wyznaczenia prędkości, przyspieszeń oraz sił reakcji</li>
+                        <li>Weryfikacja spójności wyników poprzez zastosowanie metody mocy chwilowych</li>
+                    </ul>
+                    <ul class="en">
+                        <li>Conducted comprehensive kinematic and dynamic analysis of a 1-DOF planar mechanism</li>
+                        <li>Applied analytical and graphoanalytical methods to precisely calculate velocities, accelerations, and reaction forces</li>
+                        <li>Verified the consistency of computational results using the method of instantaneous powers</li>
+                    </ul>
+                </div>
+
+                <div class="card">
+                    <div class="flex-header">
+                        <strong>
+                            <span class="pl">Aplikacja konsolowa w C++ (Kółko i Krzyżyk)</span>
+                            <span class="en">Terminal-Based C++ Application (Tic-Tac-Toe)</span>
+                        </strong>
+                        <span class="date-badge">
+                            <span class="pl">Projekt Własny</span>
+                            <span class="en">Personal Project</span>
+                        </span>
+                    </div>
+                    <ul class="pl">
+                        <li>Zaprojektowanie i implementacja w pełni funkcjonalnej gry logicznej w języku C++</li>
+                        <li>Praktyczne zastosowanie fundamentalnych paradygmatów programowania oraz zarządzania pamięcią</li>
+                    </ul>
+                    <ul class="en">
+                        <li>Designed and implemented a fully functional logic game using C++</li>
+                        <li>Applied fundamental programming paradigms and memory management techniques in a practical scenario</li>
+                    </ul>
+                </div>
+
             </section>
         </main>
     </div>
+
+    <script>
+        function setLanguage(lang) {
+            // Update the body class to hide/show the correct text
+            document.body.className = 'lang-' + lang;
+            
+            // Update the HTML language attribute for search engines
+            document.documentElement.lang = lang;
+
+            // Highlight the correct button
+            document.getElementById('btn-pl').classList.toggle('active', lang === 'pl');
+            document.getElementById('btn-en').classList.toggle('active', lang === 'en');
+        }
+    </script>
 </body>
 </html>

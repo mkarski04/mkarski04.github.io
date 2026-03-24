@@ -3,101 +3,112 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mieszko Karski - CV</title>
+    <title>Mieszko Karski - Portfolio</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="resume-container">
-        <header>
-            <h1>Mieszko Karski</h1>
-            <h2>Student III roku inżynierii mechatronicznej w języku angielskim</h2>
-            <ul class="contact-info">
-                <li>Kraków, Rzeszów</li>
-                <li>531 199 971</li>
-                <li>mkarski04@gmail.com</li>
-                <li><a href="https://mkarski04.github.io/">https://mkarski04.github.io/</a></li>
-            </ul>
-        </header>
+    <div class="layout-wrapper">
+        <aside class="sidebar">
+            <header class="profile-header">
+                <h1>Mieszko Karski</h1>
+                <h2>Student III roku inżynierii mechatronicznej</h2>
+            </header>
 
-        <section>
-            <h3>DOŚWIADCZENIE</h3>
-            
-            <div class="job">
-                <div class="flex-header">
-                    <strong>Korepetytor — Matematyka</strong>
-                    <span>Wrzesień 2023 - OBECNIE</span>
-                </div>
-                <ul>
-                    <li>Przygotowanie uczniów do matury/egzaminu ósmoklasisty</li>
-                    <li>Praca online i na żywo</li>
-                    <li>Indywidualne podejście do uczniów</li>
+            <div class="sidebar-section">
+                <h3>Kontakt</h3>
+                <ul class="contact-info">
+                    <li>📍 Kraków, Rzeszów</li>
+                    <li>📞 531 199 971</li>
+                    <li>✉️ mkarski04@gmail.com</li>
+                    <li>🌐 <a href="https://mkarski04.github.io/">mkarski04.github.io</a></li>
                 </ul>
             </div>
 
-            <div class="job">
-                <div class="flex-header">
-                    <strong>Intelimedical Poland, Warszawa, Kraków — Praktykant</strong>
-                    <span>Wrzesień 2025 - Październik 2025</span>
-                </div>
+            <div class="sidebar-section">
+                <h3>Umiejętności</h3>
                 <ul>
-                    <li>Wspieranie prac serwisowych przy diagnozowaniu usterek oraz wykonywaniu podstawowych czynności konserwacyjnych sprzętu</li>
-                    <li>Pomoc przy prowadzeniu dokumentacji serwisowej oraz ewidencji działań związanych z obsługiwanym sprzętem</li>
-                    <li>Współpraca z pracownikami działu serwisu i innymi działami firmy przy realizacji powierzonych zadań</li>
+                    <li><strong>Projektowanie 3D / CAD:</strong> Siemens NX, Autodesk Inventor</li>
+                    <li><strong>Obliczenia i Analiza:</strong> MATLAB</li>
+                    <li><strong>Programowanie:</strong> C++, HTML, CSS, Bash</li>
+                    <li><strong>Kompetencje miękkie:</strong> Zarządzanie projektami inżynierskimi</li>
                 </ul>
             </div>
 
-            <div class="job">
-                <div class="flex-header">
-                    <strong>Rickim Elektronik, Düren, Niemcy — Asystent</strong>
-                    <span>Czerwiec 2023 - Sierpień 2023</span>
-                </div>
+            <div class="sidebar-section">
+                <h3>Języki</h3>
                 <ul>
-                    <li>Ogólna pomoc w prowadzeniu firmy</li>
-                    <li>Wspieranie zespołu w organizacji biura</li>
-                    <li>Bezpośredni kontakt z klientami w wielu językach</li>
+                    <li>Angielski – C2 (certyfikat CPE)</li>
+                    <li>Niemiecki – B1 (w trakcie kursu B2)</li>
                 </ul>
             </div>
-        </section>
+        </aside>
 
-        <section>
-            <h3>EDUKACJA</h3>
-            <div class="education">
-                <div class="flex-header">
-                    <strong>Akademia Górniczo-Hutnicza, Kraków</strong>
-                    <span>Październik 2023 - OBECNIE</span>
+        <main class="content">
+            <section>
+                <h3 class="section-title">Doświadczenie</h3>
+                
+                <div class="card">
+                    <div class="flex-header">
+                        <strong>Korepetytor — Matematyka</strong>
+                        <span class="date-badge">Wrzesień 2023 - OBECNIE</span>
+                    </div>
+                    <ul>
+                        <li>Kompleksowe przygotowanie uczniów do matury oraz egzaminu ósmoklasisty</li>
+                        <li>Prowadzenie zajęć w formatach online oraz stacjonarnych</li>
+                        <li>Tworzenie indywidualnych planów nauczania dostosowanych do potrzeb ucznia</li>
+                    </ul>
                 </div>
-                <ul>
-                    <li>Laureat Olimpiady o Diamentowy Indeks AGH</li>
-                    <li>Student III roku studiów inżynierskich</li>
-                    <li>Nauka w języku angielskim</li>
-                </ul>
-            </div>
-        </section>
 
-        <section>
-            <h3>UMIEJĘTNOŚCI</h3>
-            <ul>
-                <li>Realizacja technicznych projektów inżynierskich</li>
-                <li>Biegłość w programach CAD, Siemens NX, Inventor, MATLAB i innych</li>
-                <li>Biegłość w C++, znajomość HTML, CSS, Bash i innych</li>
-            </ul>
-        </section>
+                <div class="card">
+                    <div class="flex-header">
+                        <strong>Intelimedical Poland, Warszawa, Kraków — Praktykant</strong>
+                        <span class="date-badge">Wrzesień 2025 - Październik 2025</span>
+                    </div>
+                    <ul>
+                        <li>Diagnozowanie usterek oraz wykonywanie czynności konserwacyjnych sprzętu medycznego</li>
+                        <li>Zarządzanie dokumentacją serwisową oraz ewidencją działań technicznych</li>
+                        <li>Współpraca z zespołem technicznym przy realizacji kluczowych zadań serwisowych</li>
+                    </ul>
+                </div>
 
-        <section>
-            <h3>PROJEKTY (detale na stronie w linku powyżej)</h3>
-            <ul>
-                <li><strong>Lorem ipsum dolor sit amet Consectetuer adipiscing elit, Sed diam nonummy</strong><br>Nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</li>
-                <li><strong>Lorem ipsum dolor sit amet Consectetuer adipiscing elit, Sed diam nonummy</strong><br>Nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</li>
-            </ul>
-        </section>
+                <div class="card">
+                    <div class="flex-header">
+                        <strong>Rickim Elektronik, Düren, Niemcy — Asystent</strong>
+                        <span class="date-badge">Czerwiec 2023 - Sierpień 2023</span>
+                    </div>
+                    <ul>
+                        <li>Współzarządzanie procesami operacyjnymi firmy</li>
+                        <li>Organizacja i optymalizacja pracy biura</li>
+                        <li>Obsługa międzynarodowych klientów w języku angielskim i niemieckim</li>
+                    </ul>
+                </div>
+            </section>
 
-        <section>
-            <h3>JĘZYKI</h3>
-            <ul>
-                <li>Angielski – C2 (certyfikat CPE)</li>
-                <li>Niemiecki – B1 (w trakcie kursu Goethe Institut B2)</li>
-            </ul>
-        </section>
+            <section>
+                <h3 class="section-title">Edukacja</h3>
+                <div class="card">
+                    <div class="flex-header">
+                        <strong>Akademia Górniczo-Hutnicza, Kraków</strong>
+                        <span class="date-badge">Październik 2023 - OBECNIE</span>
+                    </div>
+                    <ul>
+                        <li>Laureat Olimpiady o Diamentowy Indeks AGH</li>
+                        <li>Student III roku studiów inżynierskich</li>
+                        <li>Nauka w języku angielskim</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section>
+                <h3 class="section-title">Projekty</h3>
+                <div class="card">
+                    <ul>
+                        <li><strong>Własny projekt 1:</strong><br>Krótki opis technologii i osiągnięć w ramach tego projektu inżynierskiego.</li>
+                        <li><strong>Własny projekt 2:</strong><br>Krótki opis technologii i osiągnięć w ramach tego projektu inżynierskiego.</li>
+                    </ul>
+                </div>
+            </section>
+        </main>
     </div>
 </body>
 </html>

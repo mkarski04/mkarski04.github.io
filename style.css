@@ -1,98 +1,152 @@
-/* Base styles */
+/* Reset and Base Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #f4f4f9;
+    background-color: #f0f2f5;
     color: #333;
     line-height: 1.6;
-    margin: 0;
-    padding: 40px 20px;
 }
 
-/* White A4-style paper container */
-.resume-container {
-    max-width: 800px;
-    margin: 0 auto;
-    background: #ffffff;
-    padding: 50px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-    border-radius: 8px;
-}
-
-/* Header layout */
-header {
-    border-bottom: 2px solid #2c3e50;
-    padding-bottom: 20px;
-    margin-bottom: 25px;
-}
-
-h1 {
-    margin: 0;
-    color: #2c3e50;
-    font-size: 2.5em;
-    text-transform: uppercase;
-}
-
-h2 {
-    margin: 5px 0 15px;
-    color: #34495e;
-    font-weight: 400;
-    font-size: 1.2em;
-}
-
-/* Contact row */
-.contact-info {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+/* Main Layout Wrapper */
+.layout-wrapper {
     display: flex;
-    gap: 15px;
-    flex-wrap: wrap;
-    font-size: 0.9em;
+    flex-direction: column; /* Stacks on mobile */
+    min-height: 100vh;
 }
 
-.contact-info li a {
-    color: #2980b9;
+/* Sidebar Styling (Left Column) */
+.sidebar {
+    background-color: #1a252f;
+    color: #ecf0f1;
+    padding: 40px;
+    flex: 0 0 350px; /* Fixed width on desktop */
+}
+
+.profile-header {
+    margin-bottom: 40px;
+    border-bottom: 1px solid #34495e;
+    padding-bottom: 20px;
+}
+
+.profile-header h1 {
+    font-size: 2.2em;
+    margin-bottom: 10px;
+    color: #ffffff;
+}
+
+.profile-header h2 {
+    font-size: 1.1em;
+    font-weight: 300;
+    color: #bdc3c7;
+}
+
+.sidebar-section {
+    margin-bottom: 30px;
+}
+
+.sidebar-section h3 {
+    color: #3498db;
+    text-transform: uppercase;
+    font-size: 1em;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+
+.sidebar ul {
+    list-style: none;
+}
+
+.sidebar li {
+    margin-bottom: 12px;
+    font-size: 0.95em;
+    color: #bdc3c7;
+}
+
+.contact-info a {
+    color: #3498db;
     text-decoration: none;
 }
 
-.contact-info li a:hover {
+.contact-info a:hover {
     text-decoration: underline;
+    color: #ffffff;
 }
 
-/* Section styling */
-section {
-    margin-bottom: 25px;
+/* Main Content Styling (Right Column) */
+.content {
+    flex: 1; /* Takes up remaining space */
+    padding: 50px;
+    background-color: #f0f2f5;
 }
 
-h3 {
+.section-title {
     color: #2c3e50;
-    border-bottom: 1px solid #eeeeee;
-    padding-bottom: 5px;
     text-transform: uppercase;
-    font-size: 1.1em;
     letter-spacing: 1px;
+    margin-bottom: 20px;
+    font-size: 1.5em;
 }
 
-/* Flexbox for date alignment */
+/* Modern Cards for Experience/Education */
+.card {
+    background: #ffffff;
+    border-radius: 8px;
+    padding: 25px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    border-left: 4px solid #3498db;
+    transition: transform 0.2s ease;
+}
+
+.card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
 .flex-header {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 8px;
-    margin-top: 15px;
+    align-items: center;
+    margin-bottom: 15px;
+    flex-wrap: wrap;
+    gap: 10px;
 }
 
-.flex-header span {
-    color: #7f8c8d;
-    font-size: 0.9em;
+.flex-header strong {
+    font-size: 1.1em;
+    color: #2c3e50;
+}
+
+.date-badge {
+    background-color: #e8f4f8;
+    color: #2980b9;
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 0.85em;
     font-weight: 600;
 }
 
-/* Lists formatting */
-ul {
-    margin: 0;
+.card ul {
     padding-left: 20px;
+    color: #555;
 }
 
-li {
-    margin-bottom: 5px;
+.card li {
+    margin-bottom: 8px;
+}
+
+/* Desktop Responsiveness */
+@media (min-width: 900px) {
+    .layout-wrapper {
+        flex-direction: row; /* Places them side-by-side */
+    }
+    
+    .content {
+        padding: 60px 80px;
+    }
 }

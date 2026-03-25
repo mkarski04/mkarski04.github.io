@@ -194,3 +194,17 @@ body.lang-en .pl { display: none !important; }
     height: 28px;
     object-fit: contain;
 }
+
+/* Language Flag Icons */
+.language-list li {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.flag-icon {
+    width: 24px; 
+    height: auto;
+    border-radius: 3px; 
+    box-shadow: 0 1px 3px rgba(0,0,0,0.2); 
+}

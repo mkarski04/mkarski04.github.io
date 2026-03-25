@@ -1,17 +1,17 @@
 <!DOCTYPE html>
-<html lang="pl">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mieszko Karski - Portfolio</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body class="lang-pl">
+<body class="lang-en">
     
     <div class="language-switch">
-        <button id="btn-pl" class="active" onclick="setLanguage('pl')">PL</button>
+        <button id="btn-pl" onclick="setLanguage('pl')">PL</button>
         <span>|</span>
-        <button id="btn-en" onclick="setLanguage('en')">EN</button>
+        <button id="btn-en" class="active" onclick="setLanguage('en')">EN</button>
     </div>
 
     <div class="layout-wrapper">
@@ -299,7 +299,7 @@
             
             document.documentElement.lang = lang;
 
-            document.getElementById('btn-en').classList.toggle('active', lang === 'en ');
+            document.getElementById('btn-en').classList.toggle('active', lang === 'en');
             document.getElementById('btn-pl').classList.toggle('active', lang === 'pl');
         }
     </script>

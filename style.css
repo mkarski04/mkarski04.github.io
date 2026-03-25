@@ -208,3 +208,66 @@ body.lang-en .pl { display: none !important; }
     border-radius: 3px; 
     box-shadow: 0 1px 3px rgba(0,0,0,0.2); 
 }
+
+/* Dropdown Styles */
+.project-category {
+    margin-bottom: 15px;
+}
+
+.project-category summary {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #2c3e50;
+    cursor: pointer;
+    padding: 15px 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    list-style: none; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-left: 4px solid #3498db;
+    transition: background-color 0.2s ease;
+}
+
+.project-category summary::-webkit-details-marker {
+    display: none;
+}
+
+.project-category summary::after {
+    content: "▼";
+    font-size: 0.8em;
+    color: #3498db;
+    transition: transform 0.3s ease;
+}
+
+.project-category[open] summary::after {
+    transform: rotate(180deg);
+}
+
+.project-category summary:hover {
+    background-color: #f8fbfd;
+}
+
+.dropdown-content {
+    padding-top: 15px;
+}
+
+.summary-title-group {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.category-icons {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.summary-icon {
+    width: 22px; 
+    height: 22px;
+    object-fit: contain;
+}

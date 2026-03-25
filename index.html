@@ -293,16 +293,14 @@
     </div>
 
     <script>
+        // Language Toggle Function
         function setLanguage(lang) {
-            // Update the body class to hide/show the correct text
             document.body.className = 'lang-' + lang;
             
-            // Update the HTML language attribute for search engines
             document.documentElement.lang = lang;
 
-            // Highlight the correct button
-            document.getElementById('btn-pl').classList.toggle('active', lang === 'pl');
-            document.getElementById('btn-en').classList.toggle('active', lang === 'en');
+            document.getElementById('btn-pl').classList.toggle('active', lang === 'en ');
+            document.getElementById('btn-en').classList.toggle('active', lang === 'pl');
         }
     </script>
 </body>

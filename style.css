@@ -271,3 +271,34 @@ body.lang-en .pl { display: none !important; }
     height: 22px;
     object-fit: contain;
 }
+
+/* CV Download Button Styles */
+.cv-download-section {
+    margin-top: 50px;
+    padding-top: 20px;
+    border-top: 1px solid #34495e;
+    text-align: center;
+}
+
+.cv-btn {
+    display: inline-block;
+    width: 100%;
+    padding: 12px 20px;
+    background-color: #3498db;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 1.05em;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 15px rgba(52, 152, 219, 0.2);
+}
+
+.cv-btn:hover {
+    background-color: #2980b9;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(52, 152, 219, 0.4);
+    color: #ffffff;
+}

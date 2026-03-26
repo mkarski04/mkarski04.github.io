@@ -342,8 +342,8 @@
                                 <div class="title-with-icon">
                                     <img src="icons/cpp.png" alt="C++" class="project-icon">
                                     <strong>
-                                        <span class="pl">Gra zręcznościowa w C++ (Pong)</span>
-                                        <span class="en">C++ Arcade Game (Pong)</span>
+                                        <span class="pl">Gra Pong w C++</span>
+                                        <span class="en">C++ Pong Game</span>
                                     </strong>
                                 </div>
                                 <span class="date-badge">
@@ -353,11 +353,11 @@
                             </div>
                             <ul class="pl">
                                 <li>Zaprojektowanie i implementacja klasycznej gry zręcznościowej z wykorzystaniem biblioteki graficznej SFML</li>
-                                <li>Opracowanie pętli czasu rzeczywistego, zaawansowanej detekcji kolizji oraz dynamicznego zarządzania stanem gry</li>
+                                <li>Opracowanie pętli czasu rzeczywistego, detekcji kolizji oraz dynamicznego zarządzania stanem gry</li>
                             </ul>
                             <ul class="en">
                                 <li>Designed and implemented a classic arcade game utilising the SFML graphics library</li>
-                                <li>Developed a real-time game loop, advanced collision detection, and dynamic game state management</li>
+                                <li>Developed a real-time game loop, collision detection, and dynamic game state management</li>
                             </ul>
                             <a href="https://github.com/mkarski04/pong-cpp" target="_blank" rel="noopener noreferrer" class="project-btn">
                                 <span class="pl">💻 Zobacz kod na GitHub</span>
@@ -377,12 +377,29 @@
         // Language Toggle Function
         function setLanguage(lang) {
             document.body.className = 'lang-' + lang;
-            
             document.documentElement.lang = lang;
 
             document.getElementById('btn-en').classList.toggle('active', lang === 'en');
             document.getElementById('btn-pl').classList.toggle('active', lang === 'pl');
         }
+
+        // Auto-scroll for opened accordions
+        const accordions = document.querySelectorAll('details.project-category');
+
+        accordions.forEach(accordion => {
+            accordion.addEventListener('toggle', function() {
+                if (this.open) {
+                    setTimeout(() => {
+                        this.scrollIntoView({ 
+                            behavior: 'smooth', 
+                            block: 'start' 
+                        });
+                    }, 50);
+                }
+            });
+        });
     </script>
+</body>
+</html>
 </body>
 </html>

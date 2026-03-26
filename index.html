@@ -220,7 +220,7 @@
                             <span class="pl">Projekty Akademickie</span>
                             <span class="en">University Projects</span>
                             <div class="category-icons">
-                                <img src="icons/nx.svg" alt="Siemens NX" class="summary-icon">
+                                <img src="icons/nx.png" alt="Siemens NX" class="summary-icon">
                                 <img src="icons/matlab.png" alt="MATLAB" class="summary-icon">
                                 <img src="icons/inventor.png" alt="Autodesk Inventor" class="summary-icon">
                                 <img src="icons/autocad.png" alt="AutoCAD" class="summary-icon">
@@ -232,7 +232,7 @@
                         <div class="card">
                             <div class="flex-header">
                                 <div class="title-with-icon">
-                                    <img src="icons/nx.svg" alt="Siemens NX" class="project-icon">
+                                    <img src="icons/nx.png" alt="Siemens NX" class="project-icon">
                                     <img src="icons/matlab.png" alt="MATLAB" class="project-icon">
                                     <strong>
                                         <span class="pl">Projekt i analiza 5-osiowego ramienia robotycznego</span>
@@ -393,7 +393,8 @@
     <script>
         // Language Toggle Function
         function setLanguage(lang) {
-            document.body.className = 'lang-' + lang;
+            document.body.classList.remove('lang-en', 'lang-pl');
+            document.body.classList.add('lang-' + lang);
             document.documentElement.lang = lang;
 
             document.getElementById('btn-en').classList.toggle('active', lang === 'en');

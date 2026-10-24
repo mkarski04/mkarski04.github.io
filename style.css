@@ -241,6 +241,7 @@ body.lang-en .pl { display: none !important; }
 
 .dropdown-content {
     padding-top: 15px;
+    padding-left: 30px;
 }
 
 .summary-title-group {

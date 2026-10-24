@@ -135,7 +135,6 @@ body {
     margin-bottom: 8px;
 }
 
-/* Language Toggle Logic */
 body.lang-pl .en { display: none !important; }
 body.lang-en .pl { display: none !important; }
 
@@ -175,7 +174,6 @@ body.lang-en .pl { display: none !important; }
     margin: 0 5px;
 }
 
-/* Project Icon Styles */
 .title-with-icon {
     display: flex;
     align-items: center;
@@ -188,7 +186,6 @@ body.lang-en .pl { display: none !important; }
     object-fit: contain;
 }
 
-/* Language Flag Icons */
 .language-list li {
     display: flex;
     align-items: center;
@@ -202,7 +199,6 @@ body.lang-en .pl { display: none !important; }
     box-shadow: 0 1px 3px rgba(0,0,0,0.2); 
 }
 
-/* Dropdown Styles */
 .project-category {
     margin-bottom: 15px;
 }
@@ -266,7 +262,6 @@ body.lang-en .pl { display: none !important; }
     object-fit: contain;
 }
 
-/* CV Download Button Styles */
 .cv-download-section {
     margin-top: 50px;
     padding-top: 20px;
@@ -297,7 +292,6 @@ body.lang-en .pl { display: none !important; }
     color: #ffffff;
 }
 
-/* Dark Mode Styles */
 body.dark-mode {
     background-color: #121212;
     color: #e0e0e0;
@@ -342,7 +336,6 @@ body.dark-mode .language-switch button:hover {
     color: #ffffff;
 }
 
-/* Desktop Layout */
 @media (min-width: 900px) {
     .layout-wrapper {
         flex-direction: row;
